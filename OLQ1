@@ -1,4 +1,6 @@
 Last login: Thu Apr  4 17:48:25 on ttys000
+#Q1
+#1a
 Macbooks-MacBook-Air:~ macbook$ cd downloads
 Macbooks-MacBook-Air:downloads macbook$ ssh -i 45541337.pem ubuntu@ec2-13-238-128-221.ap-southeast-2.compute.amazonaws.com
 Welcome to Ubuntu 18.04.2 LTS (GNU/Linux 4.15.0-1032-aws x86_64)
@@ -46,9 +48,29 @@ Saving to: ‘chapter-10-shell-programming--triplet-stop.sh.2’
 chapter-10-shell-pr 100%[===================>]     236  --.-KB/s    in 0s      
 
 2019-04-04 07:43:37 (15.0 MB/s) - ‘chapter-10-shell-programming--triplet-stop.sh.2’ saved [236/236]
+#1b
+ubuntu@ip-172-31-16-251:~$ #!/bin/bash
+ubuntu@ip-172-31-16-251:~$ #save as triplet-stop.sh
+ubuntu@ip-172-31-16-251:~$ #splits a sequence into triplets
+ubuntu@ip-172-31-16-251:~$ x=0
+ubuntu@ip-172-31-16-251:~$ while [ -n ]; do
+> seq=$seq${1:$x:3}
+> x=$(expr $x + 3)
+> if [ ${1:$x:3} == taa ] && [ $x -ge 6 ]; then
+> break
+> fi
+> done
 
+#Q2
+#2b
 ubuntu@ip-172-31-16-251:~$ sed -n /WED/p tutes.txt
+
+#Q3
+#3a
 ubuntu@ip-172-31-16-251:~$ egrep 'ˆ[ˆ ]+ [ˆ ]+ [ˆ ]+$' tutes.txt
+#3b
 ubuntu@ip-172-31-16-251:~$ egrep -e '-[0-9]+ ' tutes.txt 
+#3c
 ubuntu@ip-172-31-16-251:~$ egrep ' -?([0-9]+\.?[0-9] ∗ |[0-9] ∗ \.[0-9]+)'  tutes.txt 
+#3d
 ubuntu@ip-172-31-16-251:~$ egrep ' hydrogenase' tutes.txt
