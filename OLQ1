@@ -46,3 +46,9 @@ Saving to: ‘chapter-10-shell-programming--triplet-stop.sh.2’
 chapter-10-shell-pr 100%[===================>]     236  --.-KB/s    in 0s      
 
 2019-04-04 07:43:37 (15.0 MB/s) - ‘chapter-10-shell-programming--triplet-stop.sh.2’ saved [236/236]
+
+ubuntu@ip-172-31-16-251:~$ sed -n /WED/p tutes.txt
+ubuntu@ip-172-31-16-251:~$ egrep 'ˆ[ˆ ]+ [ˆ ]+ [ˆ ]+$' tutes.txt
+ubuntu@ip-172-31-16-251:~$ egrep -e '-[0-9]+ ' tutes.txt 
+ubuntu@ip-172-31-16-251:~$ egrep ' -?([0-9]+\.?[0-9] ∗ |[0-9] ∗ \.[0-9]+)'  tutes.txt 
+ubuntu@ip-172-31-16-251:~$ egrep ' hydrogenase' tutes.txt
